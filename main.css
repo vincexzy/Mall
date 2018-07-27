@@ -513,7 +513,7 @@ img {
     clear: both;
     border-top: 1px solid #ebebeb;
     position: relative;
-    z-index: 1001;
+    z-index: 20;
 }
 
 #footer .wrapper {
@@ -534,6 +534,16 @@ img {
     padding-right: 130px;
 }
 
+@media (max-width: 1366px)
+#backtop {
+    left: auto;
+    right: 41px;
+    margin-left: 0;
+}
+
+#backtop {
+    margin-left: 631px;
+}
 
 #footer .inner_wrapper .footer_module_column .footer_app, #footer .inner_wrapper .footer_module_column .footer_mina {
     position: relative;
@@ -567,7 +577,7 @@ img {
     width: 140px;
     height: 140px;
     right: -150px;
-    z-index: 1001;
+    z-index: 20;
     background-color: #fff;
     -webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
     -moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
@@ -621,7 +631,7 @@ img {
     height: 140px;
     top: 32px;
     left: 0;
-    z-index: 1001;
+    z-index: 20;
     background-color: #fff;
     -webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
     -moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
@@ -778,4 +788,16 @@ strong {
     width: 198px;
     height: 19px;
     background: url(./img/c.png) 0 0 no-repeat;
+}
+
+#backtop {
+    display: none;
+    background: url(./img/b.png) left top no-repeat;
+    width: 28px;
+    height: 46px;
+    position: fixed;
+    right: 5%;
+    bottom: 88px;
+    cursor: pointer;
+    z-index: 21;
 }
